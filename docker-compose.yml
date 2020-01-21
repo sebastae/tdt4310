@@ -1,0 +1,14 @@
+version: "2"
+services:
+    textanalysis:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - ./code:/usr/src/app/code
+            - ./notebooks:/usr/src/app/notebooks
+        ports:
+            - 5051:5000
+            - 36911:36911
+            - 8001:8888
+        
