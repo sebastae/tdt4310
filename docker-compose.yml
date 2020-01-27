@@ -7,8 +7,11 @@ services:
         volumes:
             - ./code:/usr/src/app/code
             - ./notebooks:/usr/src/app/notebooks
+            - ~/.Xauthority:/root/.Xauthority
+            - ./nltk_data:/root/nltk_data
         ports:
             - 5051:5000
             - 36911:36911
             - 8001:8888
-        
+        environment:
+            - DISPLAY=10.22.13.253:0
