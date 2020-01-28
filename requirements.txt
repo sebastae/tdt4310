@@ -5,4 +5,4 @@ numpy
 pandas
 Keras
 jupyterlab
-
+tweepy
